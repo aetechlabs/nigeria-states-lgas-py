@@ -32,6 +32,24 @@ all_data = get_all()
 print(all_data["Lagos"])
 ```
 
+## CLI Usage
+
+After installing the package a CLI `nigeria-states-lgas` is available:
+
+```bash
+# List all states
+nigeria-states-lgas states
+
+# List LGAs for a state
+nigeria-states-lgas lgas Lagos
+
+# Fuzzy search for an LGA
+nigeria-states-lgas search-lga "Dala" --fuzzy
+
+# Fuzzy search for states
+nigeria-states-lgas search-states "Plateu" --fuzzy
+```
+
 ## Features
 
 - Provides all 36 Nigerian States + FCT.
