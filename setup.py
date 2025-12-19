@@ -11,7 +11,7 @@ setup(
     package_data={
         'nigeria_states_lgas': ['data/*.json', 'data/*.csv', 'data/*.sql'],
     },
-    url="https://github.com/aetech-research-labs/nigeria-states-lgas-py",
+    url="https://github.com/aetechlabs/nigeria-states-lgas-py",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
