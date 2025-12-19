@@ -9,7 +9,7 @@ if readme.exists():
 
 setup(
     name="nigeria-states-lgas",
-    version="1.0.3",
+    version="1.0.4",
     description="A Python package with all Nigerian States and LGAs dataset",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -29,6 +29,13 @@ setup(
         "Topic :: Software Development :: Libraries",
     ],
     python_requires='>=3.7',
+    keywords=["nigeria", "states", "lgas", "geodata", "nigeria-states"],
+    project_urls={
+        'Documentation': 'https://github.com/aetechlabs/nigeria-states-lgas-py#readme',
+        'Source': 'https://github.com/aetechlabs/nigeria-states-lgas-py',
+        'Tracker': 'https://github.com/aetechlabs/nigeria-states-lgas-py/issues',
+    },
+    license="MIT",
     entry_points={
         'console_scripts': [
             'nigeria-states-lgas=nigeria_states_lgas.cli:main',
