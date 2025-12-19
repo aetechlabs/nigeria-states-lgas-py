@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="nigeria-states-lgas",
-    version="1.0.2",
+    version="1.0.3",
     description="A Python package with all Nigerian States and LGAs dataset",
     author="AETech Research Labs",
     author_email="info@aetechlabs.com",

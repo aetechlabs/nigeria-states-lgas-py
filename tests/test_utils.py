@@ -1,5 +1,7 @@
 import pytest
 from nigeria_states_lgas import get_states, get_lgas, get_all, search_lga, search_states
+import pytest
+
 
 def test_get_states():
     states = get_states()
@@ -39,3 +41,24 @@ def test_search_lga_case_insensitive():
 def test_search_states():
     states = search_states("PLA")
     assert isinstance(states, list)
+
+
+def test_search_lga_fuzzy():
+    # fuzzy should match close spellings
+    results = search_lga("Dala", fuzzy=True)
+    assert isinstance(results, list)
+    assert "Kano" in results
+
+
+def test_search_states_fuzzy():
+    results = search_states("Plateu", fuzzy=True)
+    # 'Plateu' is a common misspelling of 'Plateau'
+    assert isinstance(results, list)
+    assert "Plateau" in results
+
+
+def test_invalid_inputs_raise():
+    with pytest.raises(ValueError):
+        search_lga(None)  # type: ignore
+    with pytest.raises(ValueError):
+        search_states(123)  # type: ignore
