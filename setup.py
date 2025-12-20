@@ -9,7 +9,7 @@ if readme.exists():
 
 setup(
     name="nigeria-states-lgas",
-    version="1.0.4",
+    version="1.0.6",
     description="A Python package with all Nigerian States and LGAs dataset",
     long_description=long_description,
     long_description_content_type="text/markdown",

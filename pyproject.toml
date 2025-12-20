@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nigeria-states-lgas"
-version = "1.0.4"
+version = "1.0.6"
 description = "Dataset of Nigerian states and local government areas (LGAs)"
 readme = "README.md"
 license = { text = "MIT" }
